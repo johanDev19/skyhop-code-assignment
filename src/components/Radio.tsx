@@ -8,13 +8,13 @@ interface Options {
 }
 
 interface Props {
-  onChange: (value: string | undefined) => void | Promise<void> | undefined;
+  onChange: (value: string) => void;
   options: Options[];
   title?: string;
 }
 
 function Radio({ onChange, options, title }: Props) {
-  const [selectedOption, setSelectedOption] = useState("");
+  const [selectedOption, setSelectedOption] = useState(options[0].value);
 
   const handleOptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedOption(event.target.value);

@@ -9,7 +9,7 @@ interface Options {
 interface Props {
   placeholder: string;
   options: Options[];
-  onChange?: (value: string | undefined) => void | Promise<void> | undefined;
+  onChange?: (value: string) => void | Promise<void> | undefined;
   className?: string;
 }
 

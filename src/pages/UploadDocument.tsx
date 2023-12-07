@@ -5,6 +5,7 @@ import Dropdown from "../components/Dropdown";
 import StatusDisplay from "../components/StatusDisplay";
 import Text from "../components/Text";
 import ToleranceWindow from "../components/ToleranceWindow";
+import ClientSelect from "../components/ClientSelect";
 
 function UploadDocument(): JSX.Element {
   return (
@@ -39,6 +40,7 @@ function UploadDocument(): JSX.Element {
           <Divider className="!w-[50%]" />
           <StatusDisplay title="Location Checking:" status="All Available!" />
           <Divider className="!w-[50%]" />
+          <ClientSelect onChange={console.log} />
         </div>
       </div>
       <div className="flex flex-col gap-5">
