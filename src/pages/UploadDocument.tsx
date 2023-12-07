@@ -37,6 +37,8 @@ function UploadDocument(): JSX.Element {
             title="Split schedule using social distancing?"
           />
           <Divider className="!w-[50%]" />
+          <StatusDisplay title="Location Checking:" status="All Available!" />
+          <Divider className="!w-[50%]" />
         </div>
       </div>
       <div className="flex flex-col gap-5">
