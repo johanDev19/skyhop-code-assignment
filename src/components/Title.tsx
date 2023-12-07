@@ -1,4 +1,5 @@
 import React from "react";
+import Divider from "./Divider";
 
 interface Props {
   children: React.ReactNode;
@@ -11,7 +12,7 @@ function Title({ children, underline, className }: Props) {
     <>
       <h1 className={`text-3xl font-bold w-fit ${className}`}>
         {children}
-        {underline && <div className="w-full bg-black h-[1px] mt-4"></div>}
+        {underline && <Divider />}
       </h1>
     </>
   );

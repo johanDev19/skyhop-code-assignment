@@ -1,3 +1,4 @@
+import Divider from "../components/Divider";
 import Dropdown from "../components/Dropdown";
 import Title from "../components/Title";
 
@@ -10,6 +11,7 @@ function Home(): JSX.Element {
       <div className="flex gap-20 justify-around w-full">
         <div className="flex flex-col gap-2 w-full">
           <Dropdown placeholder="Select Import Name:" options={[]} />
+          <Divider className="w-1/2" />
         </div>
         <div className="flex flex-col gap-2 w-full">column 2</div>
       </div>
