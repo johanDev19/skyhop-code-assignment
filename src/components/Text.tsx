@@ -13,7 +13,9 @@ function Text({ children, underline, className, as }: Props) {
 
   return (
     <>
-      <Element className={`text-3xl font-bold w-fit ${className}`}>
+      <Element
+        className={`text-3xl text-skyhopBlueDark font-bold w-fit ${className}`}
+      >
         {children}
         {underline && <Divider />}
       </Element>
@@ -22,7 +24,7 @@ function Text({ children, underline, className, as }: Props) {
 }
 
 Text.defaultProps = {
-  underline: true,
+  underline: false,
   as: "p",
 };
 

@@ -1,5 +1,6 @@
 import Divider from "../components/Divider";
 import Dropdown from "../components/Dropdown";
+import ElapseStatus from "../components/ElapseStatus";
 import Text from "../components/Text";
 
 function Home(): JSX.Element {
@@ -13,7 +14,11 @@ function Home(): JSX.Element {
       <div className="flex gap-20 justify-around w-full">
         <div className="flex flex-col gap-2 w-full">
           <Dropdown placeholder="Select Import Name:" options={[]} />
-          <Divider className="w-1/2" />
+          <Divider className="w-[50%]" />
+          <div>Drag and drop component here</div>
+          <Divider className="w-[50%]" />
+          <ElapseStatus isElapseDataPresent />
+          <Divider className="w-[50%]" />
         </div>
         <div className="flex flex-col gap-2 w-full">column 2</div>
       </div>
