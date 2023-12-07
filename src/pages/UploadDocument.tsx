@@ -1,4 +1,5 @@
 import Button from "../components/Button";
+import Radio from "../components/Radio";
 import Divider from "../components/Divider";
 import Dropdown from "../components/Dropdown";
 import ElapseStatus from "../components/ElapseStatus";
@@ -23,7 +24,17 @@ function UploadDocument(): JSX.Element {
           <Divider className="!w-[50%]" />
           <ToleranceWindow onChange={() => {}} />
         </div>
-        <div className="flex flex-col gap-2 w-full">column 2</div>
+        <div className="flex flex-col gap-2 w-full">
+          <Radio
+            onChange={console.log}
+            options={[
+              { label: "Yes", value: "1" },
+              { label: "No", value: "2" },
+            ]}
+            title="Split schedule using social distancing?"
+          />
+          <Divider className="!w-[50%]" />
+        </div>
       </div>
       <div className="flex flex-col gap-5">
         <Text>
