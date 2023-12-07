@@ -16,9 +16,15 @@ function UploadDocument(): JSX.Element {
           Document Upload
         </Text>
       </div>
-      <div className="flex gap-20 justify-around w-full">
+      <div className="flex gap-20 justify-around w-full md:flex-row flex-col">
         <div className="flex flex-col gap-2 w-full">
-          <Dropdown placeholder="Select Import Name:" options={[]} />
+          <Dropdown
+            placeholder="Select Import Name:"
+            options={[
+              { label: "test", value: "1" },
+              { label: "test2", value: "2" },
+            ]}
+          />
           <Divider className="!w-[50%]" />
           <DragDropFile />
           <Divider className="!w-[50%]" />

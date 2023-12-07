@@ -8,7 +8,7 @@ function ButtonOutline({ onClick, children }: Props): JSX.Element {
     <button
       onClick={onClick}
       type="button"
-      className="  min-w-[200px] text-yellow-500 font-bold px-12 py-4 rounded border-2 border-yellow-500"
+      className=" w-full max-w-[200px] text-yellow-500 font-bold px-12 py-4 rounded border-2 border-yellow-500"
     >
       {children}
     </button>
