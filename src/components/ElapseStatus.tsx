@@ -12,8 +12,8 @@ interface Props {
 function ElapseStatus({ isElapseDataPresent }: Props) {
   return (
     <div>
-      <Text as="p" className="text-sm font-medium flex flex-col gap-1">
-        <span className="flex flex-col">Elapse Data Checking:</span>
+      <Text as="h6" className="font-medium flex flex-col gap-1">
+        <Text as="span">Elapse Data Checking:</Text>
         <span className="text-skyhopGreen">
           {isElapseDataPresent
             ? ElapseStatusState.PRESENT
