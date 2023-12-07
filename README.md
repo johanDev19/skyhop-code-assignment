@@ -21,6 +21,9 @@ Implemented drag and drop functionality that allows users to place a file on the
 3. Install dependencies using `npm install`.
 4. Run the application using `npm run dev`.
 
+## Demo
+website link: [Link](https://skyhop-code-assignment.vercel.app/)
+
 ## Browser screenshot
 ![image](https://github.com/johanDev19/skyhop-code-assignment/assets/16693718/fe5f06a3-5613-40cb-a9b9-7f1cd726e59a)
 
