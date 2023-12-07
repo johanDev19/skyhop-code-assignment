@@ -8,6 +8,7 @@ import Progress from "./../UI/Progress";
 function DragDropFile(): JSX.Element {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [progress, setProgress] = useState<number>(0);
+  const [isFileDragOver, setIsFileDragOver] = useState<boolean>(false);
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files && event.target.files.length > 0) {
@@ -28,6 +29,7 @@ function DragDropFile(): JSX.Element {
 
   const handleDragOver = (event: React.DragEvent<HTMLDivElement>) => {
     event.preventDefault();
+    setIsFileDragOver(true);
   };
 
   const handleUpload = () => {
@@ -45,10 +47,15 @@ function DragDropFile(): JSX.Element {
     <div>
       <div
         onDrop={handleDrop}
+        onDragLeave={() => setIsFileDragOver(false)}
         onDragOver={handleDragOver}
         className="border-2 border-solid border-gray-200 rounded-lg p-4"
       >
-        <div className="border-2 min-h-[150px] border-dashed p-4 mb-4 flex justify-center border-gray-200 flex-col items-center">
+        <div
+          className={`border-2 min-h-[150px] border-dashed  p-4 mb-4 flex justify-center border-gray-200 flex-col items-center ${
+            isFileDragOver ? "bg-gray-200 border-gray-400" : ""
+          }`}
+        >
           <DocumentTextIcon className="w-10 h-10 text-orange-400 mb-2" />
           <input
             type="file"
