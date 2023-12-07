@@ -30,18 +30,12 @@ function UploadDocument(): JSX.Element {
           Data in the import file is correct. Please press Continue to import
         </Text>
         <div className="flex gap-10">
-          <button
-            type="button"
-            className="min-w-[200px] bg-skyhopBlue hover:bg-skyhopBlueDark text-white font-bold px-12 py-4 rounded"
-          >
+          <Button type="primary" onClick={() => {}}>
             Continue Import
-          </button>
-          <button
-            type="button"
-            className="  min-w-[200px] text-yellow-500 font-bold px-12 py-4 rounded border-2 border-yellow-500"
-          >
+          </Button>
+          <Button type="outline" onClick={() => {}}>
             Cancel
-          </button>
+          </Button>
         </div>
       </div>
     </section>
