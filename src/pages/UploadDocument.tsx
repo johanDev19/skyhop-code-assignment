@@ -4,7 +4,7 @@ import ElapseStatus from "../components/ElapseStatus";
 import Text from "../components/Text";
 import ToleranceWindow from "../components/ToleranceWindow";
 
-function Home(): JSX.Element {
+function UploadDocument(): JSX.Element {
   return (
     <section className="container m-auto flex flex-col items-center p-10 gap-10">
       <div className="flex justify-center">
@@ -29,4 +29,4 @@ function Home(): JSX.Element {
   );
 }
 
-export default Home;
+export default UploadDocument;
