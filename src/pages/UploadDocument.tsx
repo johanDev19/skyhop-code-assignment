@@ -2,7 +2,7 @@ import Button from "../components/Button";
 import Radio from "../components/Radio";
 import Divider from "../components/Divider";
 import Dropdown from "../components/Dropdown";
-import ElapseStatus from "../components/ElapseStatus";
+import StatusDisplay from "../components/StatusDisplay";
 import Text from "../components/Text";
 import ToleranceWindow from "../components/ToleranceWindow";
 
@@ -20,7 +20,10 @@ function UploadDocument(): JSX.Element {
           <Divider className="!w-[50%]" />
           <div>Drag and drop component here</div>
           <Divider className="!w-[50%]" />
-          <ElapseStatus isElapseDataPresent />
+          <StatusDisplay
+            title="Elapse Data Checking:"
+            status="No Elapsed Dates!"
+          />
           <Divider className="!w-[50%]" />
           <ToleranceWindow onChange={() => {}} />
         </div>
