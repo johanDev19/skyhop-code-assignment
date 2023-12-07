@@ -36,7 +36,7 @@ function UploadDocumentModal({ isOpen, onClose }: Props): JSX.Element {
             onClose();
           }}
         >
-          <div className="flex w-10 h-10 self-start bg-skyhopBlue p-2 rounded-xl text-white">
+          <div className="flex w-10 h-10 self-start bg-skyhopBlueDark p-2 rounded-xl text-white">
             <XMarkIcon className="w-6 h-6" />
           </div>
         </div>
