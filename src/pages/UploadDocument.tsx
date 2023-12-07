@@ -1,3 +1,4 @@
+import Button from "../components/Button";
 import Divider from "../components/Divider";
 import Dropdown from "../components/Dropdown";
 import ElapseStatus from "../components/ElapseStatus";
@@ -24,7 +25,25 @@ function UploadDocument(): JSX.Element {
         </div>
         <div className="flex flex-col gap-2 w-full">column 2</div>
       </div>
-      <div>buttons</div>
+      <div className="flex flex-col gap-5">
+        <Text>
+          Data in the import file is correct. Please press Continue to import
+        </Text>
+        <div className="flex gap-10">
+          <button
+            type="button"
+            className="min-w-[200px] bg-skyhopBlue hover:bg-skyhopBlueDark text-white font-bold px-12 py-4 rounded"
+          >
+            Continue Import
+          </button>
+          <button
+            type="button"
+            className="  min-w-[200px] text-yellow-500 font-bold px-12 py-4 rounded border-2 border-yellow-500"
+          >
+            Cancel
+          </button>
+        </div>
+      </div>
     </section>
   );
 }
