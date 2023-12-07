@@ -6,6 +6,7 @@ export default {
       colors: {
         skyhopBlue: "#1c3e6e",
         skyhopGreen: "#57b972",
+        skyhopGray: "#d7dbe4",
         skyhopBlueDark: "#092c4b",
       },
     },
