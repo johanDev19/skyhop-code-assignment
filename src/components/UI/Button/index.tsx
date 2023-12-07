@@ -7,7 +7,7 @@ interface Props {
   type?: "primary" | "outline";
 }
 
-function Button({ children, onClick, type }: Props) {
+function Button({ children, onClick, type }: Props): JSX.Element {
   if (type === "primary") {
     return <ButtonPrimary onClick={onClick}>{children}</ButtonPrimary>;
   }

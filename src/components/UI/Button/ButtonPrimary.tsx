@@ -3,7 +3,7 @@ interface Props {
   children: React.ReactNode;
 }
 
-function ButtonPrimary({ onClick, children }: Props) {
+function ButtonPrimary({ onClick, children }: Props): JSX.Element {
   return (
     <button
       onClick={onClick}

@@ -1,5 +1,5 @@
 import React from "react";
-import Divider from "./Divider";
+import Divider from "./../Divider";
 
 interface Props {
   children: React.ReactNode;

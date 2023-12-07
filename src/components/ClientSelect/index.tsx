@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { ClockIcon } from "@heroicons/react/20/solid";
 
-import Dropdown from "./Dropdown";
-import Radio from "./Radio";
+import Dropdown from "./../UI/Dropdown";
+import Radio from "./../UI/Radio";
 
 const CLIENT_LIST = [
   {
@@ -27,7 +27,7 @@ interface Props {
   onChange: (value: string) => void;
 }
 
-function ClientSelect({ onChange }: Props) {
+function ClientSelect({ onChange }: Props): JSX.Element {
   const [selectType, setSelectType] = useState("single");
 
   const dropdownOptions = [

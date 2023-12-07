@@ -1,11 +1,11 @@
-import Text from "./Text";
+import Text from "./../UI/Text";
 
 interface Props {
   title: string;
   status: string;
 }
 
-function StatusDisplay({ title, status }: Props) {
+function StatusDisplay({ title, status }: Props): JSX.Element {
   return (
     <div>
       <Text as="h6" className="font-medium flex flex-col gap-1">

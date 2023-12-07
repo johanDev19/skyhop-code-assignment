@@ -1,11 +1,11 @@
 import { useState } from "react";
-
-import Button from "./Button";
 import { DocumentTextIcon, PhotoIcon } from "@heroicons/react/20/solid";
-import Divider from "./Divider";
-import Progress from "./Progress";
 
-const DragDropFile = () => {
+import Button from "./../UI/Button";
+import Divider from "./../UI/Divider";
+import Progress from "./../UI/Progress";
+
+function DragDropFile(): JSX.Element {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [progress, setProgress] = useState<number>(0);
 
@@ -95,6 +95,6 @@ const DragDropFile = () => {
       )}
     </div>
   );
-};
+}
 
 export default DragDropFile;

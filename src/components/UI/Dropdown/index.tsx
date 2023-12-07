@@ -13,7 +13,12 @@ interface Props {
   className?: string;
 }
 
-function Dropdown({ placeholder, options, className, onChange }: Props) {
+function Dropdown({
+  placeholder,
+  options,
+  className,
+  onChange,
+}: Props): JSX.Element {
   const [selected, setSelected] = useState<string>();
 
   return (

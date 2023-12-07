@@ -1,4 +1,4 @@
-function Progress({ progress }: { progress: number }) {
+function Progress({ progress }: { progress: number }): JSX.Element {
   return (
     <div className="w-full bg-gray-200 h-1 mt-1 rounded-lg">
       <div

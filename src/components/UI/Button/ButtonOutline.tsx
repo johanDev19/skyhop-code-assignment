@@ -3,7 +3,7 @@ interface Props {
   onClick: () => void;
 }
 
-function ButtonOutline({ onClick, children }: Props) {
+function ButtonOutline({ onClick, children }: Props): JSX.Element {
   return (
     <button
       onClick={onClick}

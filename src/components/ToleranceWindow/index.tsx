@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { Switch } from "@headlessui/react";
 import { ClockIcon } from "@heroicons/react/20/solid";
-import Text from "./Text";
+
+import Text from "./../UI/Text";
 
 interface Props {
   onChange: (isChecked: boolean) => void;
 }
-function ToleranceWindow({ onChange }: Props) {
+function ToleranceWindow({ onChange }: Props): JSX.Element {
   const [enabled, setEnabled] = useState(false);
 
   return (

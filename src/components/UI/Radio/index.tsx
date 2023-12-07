@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import Text from "./Text";
+import Text from "./../Text";
 
 interface Options {
   label: string;
@@ -13,7 +13,7 @@ interface Props {
   title?: string;
 }
 
-function Radio({ onChange, options, title }: Props) {
+function Radio({ onChange, options, title }: Props): JSX.Element {
   const [selectedOption, setSelectedOption] = useState(options[0].value);
 
   const handleOptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
