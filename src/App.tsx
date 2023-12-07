@@ -1,7 +1,7 @@
-import UploadDocument from "./pages/UploadDocument";
+import Home from "./pages/Home";
 
 function App(): JSX.Element {
-  return <UploadDocument />;
+  return <Home />;
 }
 
 export default App;
